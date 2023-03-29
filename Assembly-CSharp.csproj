@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{E5C00A68-E6DB-FEA3-938C-F34D364EA738}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -69,7 +70,6 @@
     <Analyzer Include="C:\Users\u3d\Desktop\test\Library\PackageCache\com.unity.entities@1.0.0-pre.15\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.IdiomaticCSharpForEach.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\System\ComponentSetSystem.cs" />
     <Compile Include="Assets\Scripts\Component\EnemyComponent.cs" />
     <Compile Include="Assets\Scripts\System\ComponentEnabledTestSystem.cs" />
   </ItemGroup>

@@ -31,6 +31,7 @@ public partial struct ComponentEnabledTestSystem : ISystem
         state.Dependency = job.ScheduleParallel(state.Dependency);
     }
 
+    [WithNone(typeof(EnemyComponent))]
     [BurstCompile]
     partial struct TestJob : IJobEntity
     {
@@ -38,6 +39,10 @@ public partial struct ComponentEnabledTestSystem : ISystem
         public void Execute(Entity entity, [EntityIndexInQuery] int index)
         {
             ECB.SetComponentEnabled<EnemyComponent>(index, entity, true);
+            ECB.SetComponent(index, entity, new EnemyComponent
+            {
+                IsAttacking = false
+            });
         }
     }
 }
